@@ -5,6 +5,8 @@ import {TransactionEntity} from './transaction.entity';
 export class UserBalanceEntity {
     @PrimaryGeneratedColumn('uuid') public id!: string;
 
+
+
     @Column({type: 'uuid'}) public userId: string;
 
     @Column({type: 'decimal', precision: 18, scale: 2, default: 0}) public amount: number;
